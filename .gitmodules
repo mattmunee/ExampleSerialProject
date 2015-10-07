@@ -1,0 +1,3 @@
+[submodule "SerialCommsDll"]
+	path = SerialCommsDll
+	url = https://github.com/mattmunee/SerialCommsDll.git
