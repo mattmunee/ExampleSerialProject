@@ -51,17 +51,17 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Users\reavemt1\Documents\Projects\ExampleSerialProject\SerialCommsDll\SerialCommsDll\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)SerialCommsDll\SerialCommsDll\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\reavemt1\Documents\Projects\ExampleSerialProject\SerialCommsDll\SerialCommsDll\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)SerialCommsDll\SerialCommsDll\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>SerialCommsDll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /yr "C:\Users\reavemt1\Documents\Projects\ExampleSerialProject\SerialCommsDll\SerialCommsDll\bin\SerialCommsDll.dll" "$(TargetDir)"
-xcopy /yr "C:\Users\reavemt1\Documents\Projects\ExampleSerialProject\SerialCommsDll\SerialCommsDll\bin\SerialCommsDll.pdb" "$(TargetDir)"</Command>
+      <Command>xcopy /yr "$(SolutionDir)SerialCommsDll\SerialCommsDll\bin\SerialCommsDll.dll" "$(TargetDir)"
+xcopy /yr "$(SolutionDir)SerialCommsDll\SerialCommsDll\bin\SerialCommsDll.pdb" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -74,19 +74,19 @@ xcopy /yr "C:\Users\reavemt1\Documents\Projects\ExampleSerialProject\SerialComms
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Users\reavemt1\Documents\Projects\ExampleSerialProject\SerialCommsDll\SerialCommsDll\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)SerialCommsDll\SerialCommsDll\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\Users\reavemt1\Documents\Projects\ExampleSerialProject\SerialCommsDll\SerialCommsDll\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)SerialCommsDll\SerialCommsDll\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>SerialCommsDll.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /yr "C:\Users\reavemt1\Documents\Projects\ExampleSerialProject\SerialCommsDll\SerialCommsDll\bin\SerialCommsDll.dll" "$(TargetDir)"
-xcopy /yr "C:\Users\reavemt1\Documents\Projects\ExampleSerialProject\SerialCommsDll\SerialCommsDll\bin\SerialCommsDll.pdb" "$(TargetDir)"</Command>
+      <Command>xcopy /yr "$(SolutionDir)SerialCommsDll\SerialCommsDll\bin\SerialCommsDll.dll" "$(TargetDir)"
+xcopy /yr "$(SolutionDir)SerialCommsDll\SerialCommsDll\bin\SerialCommsDll.pdb" "$(TargetDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
